@@ -16,6 +16,6 @@
   <url type="homepage">https://rlbot.org</url>
   <url type="vcs-browser">https://github.com/RLBot/flatpak</url>
   <releases>
-    <release version="1.0.6" date="2026-09-29"/>
+    <release version="1.0.7" date="2026-10-11"/>
   </releases>
 </component>
