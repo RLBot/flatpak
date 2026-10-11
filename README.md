@@ -10,7 +10,7 @@ The server runs on the host so it can see the game and spawn bots. The GUI runs 
 
 Add the repository once, then install. The repository is GPG-signed and served from GitHub Pages. `flatpak update` detects new launcher releases automatically:
 
-    flatpak remote-add --user --if-not-exists rlbot-flatpak https://raw.githubusercontent.com/VirxEC/rlbot-flatpak/master/org.rlbot.gui.flatpakrepo
+    flatpak remote-add --user --if-not-exists rlbot-flatpak https://raw.githubusercontent.com/RLBot/flatpak/master/org.rlbot.gui.flatpakrepo
     flatpak install --user rlbot-flatpak org.rlbot.gui
 
 Update later with:
@@ -19,7 +19,7 @@ Update later with:
 
 ### Single file (no auto-updates)
 
-Download `org.rlbot.gui.flatpak` from the latest [release](https://github.com/VirxEC/rlbot-flatpak/releases) and install it directly. No remote is attached. Re-download the file for every new release:
+Download `org.rlbot.gui.flatpak` from the latest [release](https://github.com/RLBot/flatpak/releases) and install it directly. No remote is attached. Re-download the file for every new release:
 
     flatpak install ./org.rlbot.gui.flatpak
 
