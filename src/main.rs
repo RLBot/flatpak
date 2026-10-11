@@ -80,7 +80,9 @@ fn run() -> anyhow::Result<()> {
     let mut gui = Command::new(&gui_path);
     gui.current_dir(env::temp_dir());
     if gpu::needs_dmabuf_workaround() {
-        info!("NVIDIA driver detected: disabling the WebKitGTK DMA-BUF renderer");
+        info!(
+            "Disabling the WebKitGTK DMA-BUF renderer (blank window on NVIDIA, backdrop-filter memory leak)"
+        );
         gui.env(gpu::DMABUF_RENDERER_ENV, "1");
     }
     let status = gui
