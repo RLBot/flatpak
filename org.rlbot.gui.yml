@@ -19,8 +19,9 @@ finish-args:
   # GitHub API + binary downloads, RocketHost, botpack downloads
   - --share=network
   # WebView display
+  - --share=ipc
   - --socket=wayland
-  - --socket=x11
+  - --socket=fallback-x11
   - --device=dri
   # flatpak-spawn --host (RLBotServer must run on the host) and xdg portals
   - --socket=session-bus
